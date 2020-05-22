@@ -1,7 +1,7 @@
 import React from "react";
 
-import reducers from "./reducers";
 import { StateProvider } from "./State";
+import reducers from "./reducers";
 import initialState from "./initialData";
 
 import Header from "./Header";

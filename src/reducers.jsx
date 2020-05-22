@@ -11,15 +11,7 @@ const userReducer = (state, action) => {
 };
 
 const basketReducer = (state, action) => {
-  switch (action.type) {
-    case "CHANGE_USER_NAME":
-      return {
-        ...state,
-        name: action.name,
-      };
-    default:
-      return state;
-  }
+  console.log('other')
 };
 
 export default function mainReducer({ user, basket }, action) {
