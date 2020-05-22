@@ -2,20 +2,12 @@ import React from "react";
 
 import reducers from "./reducers";
 import { StateProvider } from "./State";
+import initialState from "./initialData";
 
 import Header from "./Header";
 import Main from "./Main";
 
 import "./App.css";
-
-const initialState = {
-  user: {
-    age: "28",
-    name: "Ralph Effting",
-    isActivated: true,
-  },
-  basket: {},
-};
 
 function App() {
   return (
