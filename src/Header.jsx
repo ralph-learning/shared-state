@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
+import { useStateValue } from "./State";
 
 export default function Header() {
-  return (
-    <nav>
-      <li>Logo</li>
-      <li>Ralph Effting</li>
-    </nav>
-  )
-}
+  const [{ user }] = useStateValue();
 
+  return (
+    <nav className="navbar">
+      <li>Example</li>
+      <li>{user.name}</li>
+    </nav>
+  );
+}

@@ -4,11 +4,12 @@ import { useStateValue } from "./State";
 import Input from "./Input";
 
 export default function Main() {
-  const [{ name }] = useStateValue();
+  const [{ user }] = useStateValue();
 
   return (
-    <main>
-      Hello, {name}
+    <main className="main">
+      Hello, {user.name}
+      <br />
       <Input />
     </main>
   );

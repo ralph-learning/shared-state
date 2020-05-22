@@ -1,11 +1,12 @@
 import React from "react";
-import "./App.css";
 
 import reducers from "./reducers";
 import { StateProvider } from "./State";
 
 import Header from "./Header";
 import Main from "./Main";
+
+import "./App.css";
 
 const initialState = {
   user: {
